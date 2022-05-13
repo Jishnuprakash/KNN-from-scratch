@@ -29,12 +29,14 @@ class KNN():
     dist - distance used for classification
 
     Methods: -
-    actScore, actFunction, updateRule, and training
+    distance, predict, accuracy
     """
 
     def __init__(self, data, dist='cos'):
         """
         initialise KNN class
+        data -> train data 
+        dist -> cos / euclidean / manhattan
         """
         self.data = data
         self.dist = dist
